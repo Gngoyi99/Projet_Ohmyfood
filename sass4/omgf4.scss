@@ -1,0 +1,693 @@
+
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('../webfontkit-SKR/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('../webfontkit-SKR/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../webfontkit-20210121-092736/roboto-black-webfont-webfont.woff2') format('woff2'),
+         url('../webfontkit-20210121-092736/roboto-black-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../webfontkit-20210121-092736/roboto-bold-webfont-webfont.woff2') format('woff2'),
+         url('../webfontkit-20210121-092736/roboto-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../webfontkit-20210121-092736/roboto-thin-webfont-webfont.woff2') format('woff2'),
+         url('../webfontkit-20210121-092736/roboto-thin-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0;
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: 100% 270px; 
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+    
+    
+}
+header{
+
+
+    .logo{
+        display: flex;
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        
+        &__icone{
+            font-size: 20px;
+            padding: 15px 0px 0px 20px;
+            
+
+            a{
+                color: black;
+            }
+        }
+
+        &__image{
+            display: flex;
+            justify-content: right;
+            height:30px;
+            padding-top:10px;
+            padding-bottom:10px;
+            object-fit: cover;
+        }
+    }
+    .restaurant{
+        
+        &__image{
+            object-fit: cover;
+            width: 375px;
+            height: 250px;
+            
+
+            
+
+        }
+    }
+}   
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 230px;
+    height: 1100px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px 25px 0px 0px;
+    background-color:  #F2F2F2;
+
+    &__titre{
+        text-align: center;
+        width: 100%;
+
+        &__nom{
+        font-family: shrikhandregular;
+        font-size: 25px;
+
+            i{
+                margin-left: 118px;
+                color: black;
+                font-size: 30px;
+                position: relative;
+            
+                i{
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    font-size: 28.4px;
+                        transition: color 1000ms;
+                        color: #ffffff;
+                }
+                i:hover{
+                       
+                    color: rgb(147, 86, 220);
+                    
+                    
+                }
+            }    
+        }
+
+        &__style{
+        border-bottom: 2px solid #99E2D0;
+        width: 47px;
+        font-family: robotothin;
+        }
+    }
+
+    &__entrees{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        transform-origin: 50% top;
+        transform: scale(0);
+        animation: menu__entrees 300ms 200ms linear both;
+        
+    
+                @keyframes menu__entrees{
+                    0% {
+                        transform: scaleY(1);
+                        opacity: 0;
+                       
+                    }
+                    20% {
+                        transform: scaleY(1);
+                        opacity: 0.1;
+                       
+                    }
+                    40% {
+                        transform: scaleY(1);
+                        opacity: 0.12;
+                       
+                    }
+                    60% {
+                        transform: scaleY(1);
+                        opacity: 0.15;
+                       
+                    }
+                    80% {
+                        transform: scaleY(1); 
+                    }
+                    100%{
+                        transform: scaleY(1);
+                       ;
+                        
+                    }
+                    
+                    
+                }       
+                &__box{
+                    width: 330px;
+                    height: 55px;
+                    background-color: #99E2D0;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    box-shadow: 1px 4px 10px grey;
+                    justify-content: space-around;
+                    position: relative;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;      
+                    i{
+                        font-size: 20px;
+                        color: white;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 18px;
+                        margin-right: 12px; 
+                        position: absolute;
+                        right: 0px;
+                        transform: scale(0) translateX(100px);
+                    }
+                
+                    &:hover{    
+                        transform: scale(1); 
+                                        
+                        i{
+                            transform: scale(1) translateX(0px)rotate(2turn);
+                            transition: transform 950ms ease-in-out;
+                        }
+                                            
+                    } 
+                    &__1{
+                        background-color: white;
+                        display: flex;
+                        padding: 8px;
+                        justify-content:flex-start;
+                        justify-content: space-between;
+                        transform-origin: bottom 0%;
+                        margin: -2px;
+                        border-radius: 8px;
+                        transform: scale(1);
+                        width: 318px;
+                        &:hover{
+                            width: 270px;    
+                            transform: scale(1); 
+                            transition: width 950ms;
+                        }
+        
+
+                        &__choix{
+                            font-family: robotoblack;
+                            padding-top: 5px; 
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            &--texte{  
+                                font-weight: normal;
+                                font-style: normal;
+                                font-family: robotothin;
+                                font-size: 15px;
+                            }
+                        }    
+                    
+                        &__prix{
+                            font-weight: bold;
+                            padding-top: 22px;
+                            padding-right: 10px;
+                            font-family: robotoblack;
+                        }
+
+                    }
+                }    
+        
+
+    }
+    &__plats{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        transform-origin: 50% top;
+        transform: scaleY(0);
+        animation: menu__plats 300ms 550ms linear both;
+        
+    
+                @keyframes menu__plats{
+                    0% {
+                        transform: scaleY(1);
+                        opacity: 0;
+                       
+                    }
+                    20% {
+                        transform: scaleY(1);
+                        opacity: 0.1;
+                       
+                    }
+                    40% {
+                        transform: scaleY(1);
+                        opacity: 0.12;
+                       
+                    }
+                    60% {
+                        transform: scaleY(1);
+                        opacity: 0.15;
+                       
+                    }
+                    80% {
+                        transform: scaleY(1);
+                        
+                       
+                    }
+                    100%{
+                        transform: scaleY(1);
+                        
+                        
+                    }
+                    
+                    
+                }       
+                &__box{
+                    width: 330px;
+                    height: 55px;
+                    background-color: #99E2D0;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    box-shadow: 1px 4px 10px grey;
+                    justify-content: space-around;
+                    position: relative;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;        
+                    i{
+                        font-size: 20px;
+                        color: white;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 18px;
+                        margin-right: 12px; 
+                        position: absolute;
+                        right: 0px;
+                        transform: scale(0) translateX(100px) rotate(2turn);
+                    }
+                
+                    &:hover{    
+                        transform: scale(1); 
+                                        
+                        i{
+                            transform: scale(1) translateX(0px);
+                            transition: transform 950ms ease-in-out;
+                        }
+                                            
+                    } 
+                    &__1{
+                        background-color: white;
+                        display: flex;
+                        padding: 8px;
+                        justify-content:flex-start;
+                        justify-content: space-between;
+                        transform-origin: bottom 0%;
+                        margin: -2px;
+                        border-radius: 8px;
+                        transform: scale(1);
+                        width: 318px;
+                        &:hover{
+                            width: 270px;    
+                            transform: scale(1); 
+                            transition: width 950ms;
+                        }
+        
+
+                        &__choix{
+                            font-family: robotoblack;
+                            padding-top: 5px; 
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            &--texte{  
+                                font-weight: normal;
+                                font-style: normal;
+                                font-family: robotothin;
+                                font-size: 15px;
+                            }
+                        }    
+                    
+                        &__prix{
+                            font-weight: bold;
+                            padding-top: 22px;
+                            padding-right: 10px;
+                            font-family: robotoblack;
+                        }
+
+                    }
+                }
+        
+
+    }
+    &__desserts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        transform-origin: 50% top;
+        transform: scaleY(0);
+        animation: menu__desserts 300ms 1050ms linear both;
+
+        
+    
+                @keyframes menu__desserts{
+                    0% {
+                        transform: scaleY(1);
+                        opacity: 0;
+                       
+                    }
+                    20% {
+                        transform: scaleY(1);
+                        opacity: 0.1;
+                       
+                    }
+                    40% {
+                        transform: scaleY(1);
+                        opacity: 0.12;
+                       
+                    }
+                    60% {
+                        transform: scaleY(1);
+                        opacity: 0.15;
+                       
+                    }
+                    80% {
+                        transform: scaleY(1);
+                        
+                       
+                    }
+                    100%{
+                        transform: scaleY(1);
+                        
+                        
+                    }
+                    
+                    
+                }       
+                &__box{
+                    width: 330px;
+                    height: 55px;
+                    background-color: #99E2D0;
+                    border-radius: 8px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    box-shadow: 1px 4px 10px grey;
+                    justify-content: space-around;
+                    position: relative;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                            
+                    i{
+                        font-size: 20px;
+                        color: white;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 18px;
+                        margin-right: 12px; 
+                        position: absolute;
+                        right: 0px;
+                        transform: scale(0) translateX(100px) rotate(2turn);
+                    }
+                
+                    &:hover{    
+                        transform: scale(1); 
+                                        
+                        i{
+                            transform: scale(1) translateX(0px);
+                            transition: transform 950ms ease-in-out;
+                        }
+                                            
+                    } 
+                    &__1{
+                        background-color: white;
+                        display: flex;
+                        padding: 8px;
+                        justify-content:flex-start;
+                        justify-content: space-between;
+                        transform-origin: bottom 0%;
+                        margin: -2px;
+                        border-radius: 8px;
+                        transform: scale(1);
+                        width: 318px;
+                        &:hover{
+                            width: 270px;    
+                            transform: scale(1); 
+                            transition: width 950ms;
+                        }
+        
+
+                        &__choix{
+                            font-family: robotoblack;
+                            padding-top: 5px; 
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            &--texte{  
+                                font-weight: normal;
+                                font-style: normal;
+                                font-family: robotothin;
+                                font-size: 15px;
+                            }
+                        }    
+                    
+                        &__prix{
+                            font-weight: bold;
+                            padding-top: 22px;
+                            padding-right: 10px;
+                            font-family: robotoblack;
+                        }
+
+                    }
+                }    
+    }
+
+    &__bouton{
+        margin-top: 60px;          
+        margin-bottom: 60px;                    
+        :hover{
+            border-radius: 25px;
+            background: radial-gradient(circle, lighten(#C968DB, 0) 10%, darken(#C968DB, 5) 100%);
+            opacity: 1;
+            transition: background box-shadow 500ms;
+            box-shadow: 1px 4px 10px grey;
+        }
+        
+        &__commander{
+            color:#F2F2F2;
+            padding: auto;
+            text-align: center;
+            font-family: robotoblack;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 120px;
+            margin: 0 auto;
+            background: linear-gradient(to top left, #9356DC, #ff79DA);
+            border-radius: 25px;
+            
+            
+        }
+    
+    }
+
+}  
+
+
+
+footer{
+    background-color: rgb(48, 48, 48);
+    height: 230px;
+
+    .information{
+        height: 170px;
+        padding-top:  20px; ;
+        margin-left: 16.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__logo{
+            font-size: 20px;
+            padding: 20px 20px 15px 0px;
+            object-fit: cover;
+            font-family: shrikhandregular;
+            color: white;
+            
+            
+            
+        }
+
+        &__texte{
+            color: white;
+            font-size: 15px;
+            display: flex;
+            font-family: robotoblack;
+
+            &__icone{
+                width: 30px;
+                
+            
+
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 180px) and (max-width: 336px)
+{
+    .menu{
+        
+    
+    
+        &__titre{
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            font-family: robotothin;
+            
+            &__nom{
+                font-family: shrikhandregular;
+                font-size: 25px;
+                margin-left: 1%;    
+            }
+    
+            &__style{
+            border-bottom: 2px solid #99E2D0;
+            width: 15%;
+            margin-left: 1%;
+            }
+    
+        }
+    
+        &__entrees{
+                  
+            &__box{
+                    width: 95%;
+                    
+            
+                    &__1{
+                    
+                    width: 96%;
+                    margin-right: 1%;
+                    
+                    &:active{
+                        width: 245px;                    
+                    }
+    
+                }
+        
+            } 
+        }    
+       
+    
+        &__plats{
+
+            &__box{
+                width: 95%;
+               
+          
+                &__1{
+                    
+                    width: 96%;
+                    margin-right: 1%;
+                    
+                    &:active{
+                        width: 245px;    
+                    }
+    
+                }
+            }
+    
+        }
+        &__desserts{
+          
+            &__box{
+                width: 95%;
+                
+                          
+                &__1{
+                    width: 96%;
+                    margin-right: 1%;
+    
+                    &:active{
+                        width: 245px;    
+                    }
+        
+                }
+            }
+        }
+            
+    
+        &__bouton{
+            margin-left: 92.953px;
+            margin-right: 92.953px;
+        
+        }
+    
+    }
+}
+@media screen and (min-width: 180px) and (max-width: 333px)
+{
+    header{
+        
+        .logo{
+            width: 100%;
+        }    
+    }
+        
+    .menu{   
+        &__titre{
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            justify-content: space-between;
+            font-family: robotothin;
+        }
+    }       
+}
