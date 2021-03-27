@@ -218,11 +218,14 @@ header{
                     margin-top: 18px;
                     margin-right: 12px; 
                     position: absolute;
-                    right: 0px;
                     transform: scale(0) translateX(100px);
+                    width: 330px;
+                    height: 55px;
+                    right: 12px;
+                    top: 18px;
 
                 }
-                &:active{    
+                &:hover{    
                     transform: scale(1); 
                     i{
                         transform: scale(1) translateX(0px) rotate(2turn);
@@ -243,7 +246,7 @@ header{
                 border-radius: 8px;
                 transform: scale(1);
                 width: 318px;
-                &:active{
+                &:hover{
                     width: 270px;    
                     transform: scale(1); 
                     transition: width 950ms ;   
