@@ -265,7 +265,6 @@ header .presentation__bouton__restaurant__texte {
   color: #ffffff;
 }
 .restaurants__nom__icone i i:hover {
-  scale: 2;
   color: #9356dc;
 }
 .restaurants__nom__nouveau {
